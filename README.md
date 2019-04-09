@@ -1,4 +1,4 @@
-# Aspect Based Sentiment Analysis
+# ABSA
 
 
 
@@ -34,6 +34,8 @@
 
 ##### 可参考的GitHub项目（消化完可随时移除）
 
+顺便可以标识一下每个项目用的啥数据集，大部分是SemEval的
+
 - 无监督 [Unsupervised-Aspect-Extraction](https://github.com/ruidan/Unsupervised-Aspect-Extraction) 
 - EA抽取 [aspect-extraction](https://github.com/soujanyaporia/aspect-extraction) 
 - [AspectBasedSentimentAnalysis](https://github.com/yardstick17/AspectBasedSentimentAnalysis) 
@@ -43,6 +45,17 @@
 
  
 
+##### paper
+
+- Deep Learning for Aspect-Based Sentiment Analysis [[paper](https://cs224d.stanford.edu/reports/WangBo.pdf)]
+- Fine-grained Opinion Mining with Recurrent Neural Networks and Word Embeddings [[paper](https://www.aclweb.org/anthology/D15-1168)]
+- SemEval-2015 Task 12: Aspect Based Sentiment Analysis [[paper](https://www.aclweb.org/anthology/S15-2082)]
+- SemEval-2016 Task 5: Aspect Based Sentiment Analysis [[paper](https://www.aclweb.org/anthology/S16-1002)]
+- Encoding Conversation Context for Neural Keyphrase Extraction from Microblog Posts [[paper](https://ai.tencent.com/ailab/media/publications/naacl2018/Encoding_Conversation_Context_for_Neural_Keyphrase_Extraction_from_Microblog_Posts.pdf)]
+- End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF [[paper](https://arxiv.org/pdf/1603.01354.pdf)]
+
+
+
 ##### 有趣想做的GitHub项目
 
 - [ai-research-keyphrase-extraction](https://github.com/swisscom/ai-research-keyphrase-extraction)
@@ -51,11 +64,12 @@
 
 ##### 数据集
 
-中文
+###### 中文
+
+- AI-Challenge
 
 
-
-英文
+###### 英文
 
 - Amazon product data [[data](http://jmcauley.ucsd.edu/data/amazon/)]
 - Web data: Amazon reviews[[data](https://snap.stanford.edu/data/web-Amazon.html)]
