@@ -36,12 +36,17 @@
 
 顺便可以标识一下每个项目用的啥数据集，大部分是SemEval的
 
-- 无监督 [Unsupervised-Aspect-Extraction](https://github.com/ruidan/Unsupervised-Aspect-Extraction) 
-- EA抽取 [aspect-extraction](https://github.com/soujanyaporia/aspect-extraction) 
-- [AspectBasedSentimentAnalysis](https://github.com/yardstick17/AspectBasedSentimentAnalysis) 
-- [Review_aspect_extraction](https://github.com/yafangy/Review_aspect_extraction) 
-- [DE-CNN](https://github.com/howardhsu/DE-CNN) 
-- [Coupled-Multi-layer-Attentions](https://github.com/happywwy/Coupled-Multi-layer-Attentions) 
+- [self data] [Unsupervised-Aspect-Extraction](https://github.com/ruidan/Unsupervised-Aspect-Extraction) 
+- [SemEval-2016] [aspect-extraction](https://github.com/soujanyaporia/aspect-extraction) 
+- [SemEval-2015] [AspectBasedSentimentAnalysis](https://github.com/yardstick17/AspectBasedSentimentAnalysis) 
+- [SemEval-2016] [Review_aspect_extraction](https://github.com/yafangy/Review_aspect_extraction) 
+- [SemEval-2014, 2016] [DE-CNN](https://github.com/howardhsu/DE-CNN) 
+- [SemEval-2015] [Coupled-Multi-layer-Attentions](https://github.com/happywwy/Coupled-Multi-layer-Attentions) 
+- [SemEval-2016 laptop] [mem_absa](https://github.com/ganeshjawahar/mem_absa) 
+- [SemEval-2014] [ABSA-PyTorch](https://github.com/songyouwei/ABSA-PyTorch) 
+- [SemEval-2014, 2016] [Attention_Based_LSTM_AspectBased_SA](https://github.com/gangeshwark/Attention_Based_LSTM_AspectBased_SA) 
+- [SemEval-2014] [ABSA_Keras](https://github.com/AlexYangLi/ABSA_Keras) 
+- [SemEval-2016] [ABSA](https://github.com/LingxB/ABSA/tree/master/Data/SemEval) 
 
  
 
