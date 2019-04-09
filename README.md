@@ -26,9 +26,7 @@
 - NLP的 SemEval 论文合辑 [[ACL](https://www.aclweb.org/anthology/)]
 - SemEval - 2014 - ABSA [[competition](http://alt.qcri.org/semeval2014/task4/)]
 - SemEval - 2015 - ABSA [[competition](http://alt.qcri.org/semeval2015/task12/)]
-- SemEval 2016 ABSA Annotation Guidelines [[guideline](http://alt.qcri.org/semeval2016/task5/data/uploads/absa2016_annotationguidelines.pdf)]
-- SemEval - 2016 - ABSA [[competition](http://alt.qcri.org/semeval2016/task5/)]
-- SemEval 2016 ABSA [[paper](http://alt.qcri.org/semeval2016/task5/data/uploads/absa2016_annotationguidelines.pdf)]
+- SemEval - 2016 - ABSA [[competition](http://alt.qcri.org/semeval2016/task5/)] [[guideline](http://alt.qcri.org/semeval2016/task5/data/uploads/absa2016_annotationguidelines.pdf)] [[paper](http://alt.qcri.org/semeval2016/task5/data/uploads/absa2016_annotationguidelines.pdf)]
 
 
 
