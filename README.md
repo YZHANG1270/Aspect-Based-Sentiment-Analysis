@@ -1,21 +1,52 @@
 # ABSA
 
+Aspect Based Sentiment Analysis
+
+虽说是基于观点的分析，但也是基于句子层的分析，因为需要按句子进行分析。
 
 
 
-##### 参考
 
-- ABSA presentation [[ppt](https://www.iaria.org/conferences2016/filesHUSO16/OrpheeDeClercq_Keynote_ABSA.pdf)]
+##### 概念参考
+
+- ABSA refer presentation [[ppt](https://www.iaria.org/conferences2016/filesHUSO16/OrpheeDeClercq_Keynote_ABSA.pdf)]
 - 阿里云的商品评价解析 [[link](https://help.aliyun.com/document_detail/64231.html?spm=5176.12095382.1232858.4.739e3b24xUnvbZ)]
 
+| 参数名         | 值                                                           |
+| -------------- | ------------------------------------------------------------ |
+| textPolarity   | 整条文本情感极性：正、中、负，text字段输入非法时返回-100     |
+| textIntensity  | 整条文本情感程度(取值范围[-1,1]，越大代表越正向，越小代表越负向，接近0代表中性) |
+| aspectItem     | 属性情感列表，每个元素是一个json字段                         |
+| aspectCategory | 属性类别                                                     |
+| aspectIndex    | 属性词所在的起始位置，终结位置                               |
+| aspectTerm     | 属性词                                                       |
+| opinionTerm    | 情感词                                                       |
+| aspectPolarity | 属性片段极性（正、中、负）                                   |
 
 
-##### Task
 
-- [ ] 提取观点
-- [ ] 提取关键词
-- [ ] EA分类
-- [ ] polarity分类
+##### Task Process
+
+- [ ] 按句 提取 属性词
+- [ ] 按句 提取 情感词
+- [ ] 属性词所在起始位置，终止位置
+- [ ] 属性词 -> EA分类
+- [ ] 情感词 -> 极性分类
+- [ ] 整条文本的感情极性（正、负、中） 及其概率值
+
+
+
+##### Done Tasks
+
+根据现有数据集，实际完成的任务
+
+- [x] 按句进行 EA 分类
+- [x] 按句进行情感极性分析
+
+
+
+##### To do
+
 - [ ] 观点过滤：文字噪音处理、虚假评论、水军、广告、不含观点、无意义文本
 - [ ] negation 否定处理
 
@@ -24,27 +55,27 @@
 ##### SemEval ABSA
 
 - NLP的 SemEval 论文合辑 [[ACL](https://www.aclweb.org/anthology/)]
-- SemEval - 2014 - ABSA [[competition](http://alt.qcri.org/semeval2014/task4/)]
-- SemEval - 2015 - ABSA [[competition](http://alt.qcri.org/semeval2015/task12/)]
-- SemEval - 2016 - ABSA [[competition](http://alt.qcri.org/semeval2016/task5/)] [[guideline](http://alt.qcri.org/semeval2016/task5/data/uploads/absa2016_annotationguidelines.pdf)] [[paper](http://alt.qcri.org/semeval2016/task5/data/uploads/absa2016_annotationguidelines.pdf)]
+- SemEval - 2014 - ABSA [[competition](http://alt.qcri.org/semeval2014/task4/)] [[data](http://alt.qcri.org/semeval2014/task4/index.php?id=data-and-tools)] 
+- SemEval - 2015 - ABSA [[competition](http://alt.qcri.org/semeval2015/task12/)] [[data](http://alt.qcri.org/semeval2015/task12/index.php?id=data-and-tools)] [[paper](https://www.aclweb.org/anthology/S15-2082)] 
+- SemEval - 2016 - ABSA [[competition](http://alt.qcri.org/semeval2016/task5/)] [[data](http://alt.qcri.org/semeval2016/task5/index.php?id=data-and-tools)] [[guideline](http://alt.qcri.org/semeval2016/task5/data/uploads/absa2016_annotationguidelines.pdf)] [[paper](https://www.aclweb.org/anthology/S16-1002)]
 
 
 
-##### 可参考的GitHub项目（消化完可随时移除）
+##### 可参考的GitHub项目
 
-顺便可以标识一下每个项目用的啥数据集，大部分是SemEval的
+数据集基本都基于 2014-2016 SemEval 比赛
 
-- [self data] [Unsupervised-Aspect-Extraction](https://github.com/ruidan/Unsupervised-Aspect-Extraction) 
-- [SemEval-2016] [aspect-extraction](https://github.com/soujanyaporia/aspect-extraction) 
-- [SemEval-2015] [AspectBasedSentimentAnalysis](https://github.com/yardstick17/AspectBasedSentimentAnalysis) 
-- [SemEval-2016] [Review_aspect_extraction](https://github.com/yafangy/Review_aspect_extraction) 
-- [SemEval-2014, 2016] [DE-CNN](https://github.com/howardhsu/DE-CNN) 
-- [SemEval-2015] [Coupled-Multi-layer-Attentions](https://github.com/happywwy/Coupled-Multi-layer-Attentions) 
-- [SemEval-2016 laptop] [mem_absa](https://github.com/ganeshjawahar/mem_absa) 
-- [SemEval-2014] [ABSA-PyTorch](https://github.com/songyouwei/ABSA-PyTorch) 
-- [SemEval-2014, 2016] [Attention_Based_LSTM_AspectBased_SA](https://github.com/gangeshwark/Attention_Based_LSTM_AspectBased_SA) 
-- [SemEval-2014] [ABSA_Keras](https://github.com/AlexYangLi/ABSA_Keras) 
-- [SemEval-2016] [ABSA](https://github.com/LingxB/ABSA/tree/master/Data/SemEval) 
+- [data: self data] [Unsupervised-Aspect-Extraction](https://github.com/ruidan/Unsupervised-Aspect-Extraction) 
+- [data: SemEval-2016] [aspect-extraction](https://github.com/soujanyaporia/aspect-extraction) 
+- [data: SemEval-2015] [AspectBasedSentimentAnalysis](https://github.com/yardstick17/AspectBasedSentimentAnalysis) 
+- [data: SemEval-2016] [Review_aspect_extraction](https://github.com/yafangy/Review_aspect_extraction) 
+- [data: SemEval-2014, 2016] [DE-CNN](https://github.com/howardhsu/DE-CNN) 
+- [data: SemEval-2015] [Coupled-Multi-layer-Attentions](https://github.com/happywwy/Coupled-Multi-layer-Attentions) 
+- [data: SemEval-2016 laptop] [mem_absa](https://github.com/ganeshjawahar/mem_absa) 
+- [data: SemEval-2014] [ABSA-PyTorch](https://github.com/songyouwei/ABSA-PyTorch) 
+- [data: SemEval-2014, 2016] [Attention_Based_LSTM_AspectBased_SA](https://github.com/gangeshwark/Attention_Based_LSTM_AspectBased_SA) 
+- [data: SemEval-2014] [ABSA_Keras](https://github.com/AlexYangLi/ABSA_Keras) 
+- [data: SemEval-2016] [ABSA](https://github.com/LingxB/ABSA/tree/master/Data/SemEval) 
 
  
 
@@ -52,16 +83,10 @@
 
 - Deep Learning for Aspect-Based Sentiment Analysis [[paper](https://cs224d.stanford.edu/reports/WangBo.pdf)]
 - Fine-grained Opinion Mining with Recurrent Neural Networks and Word Embeddings [[paper](https://www.aclweb.org/anthology/D15-1168)]
-- SemEval-2015 Task 12: Aspect Based Sentiment Analysis [[paper](https://www.aclweb.org/anthology/S15-2082)]
-- SemEval-2016 Task 5: Aspect Based Sentiment Analysis [[paper](https://www.aclweb.org/anthology/S16-1002)]
 - Encoding Conversation Context for Neural Keyphrase Extraction from Microblog Posts [[paper](https://ai.tencent.com/ailab/media/publications/naacl2018/Encoding_Conversation_Context_for_Neural_Keyphrase_Extraction_from_Microblog_Posts.pdf)]
 - End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF [[paper](https://arxiv.org/pdf/1603.01354.pdf)]
 
 
-
-##### 有趣想做的GitHub项目
-
-- [ai-research-keyphrase-extraction](https://github.com/swisscom/ai-research-keyphrase-extraction)
 
 
 
@@ -69,19 +94,34 @@
 
 ###### 中文
 
-- AI-Challenge
+- AI-Challenge [[data](https://drive.google.com/file/d/1OInXRx_OmIJgK3ZdoFZnmqUi0rGfOaQo/view)] 
+- SemEval ABSA 2016 [[data](http://alt.qcri.org/semeval2016/task5/index.php?id=data-and-tools)] 
 
 
 ###### 英文
 
 - Amazon product data [[data](http://jmcauley.ucsd.edu/data/amazon/)]
-- Web data: Amazon reviews[[data](https://snap.stanford.edu/data/web-Amazon.html)]
+- Web data: Amazon reviews [[data](https://snap.stanford.edu/data/web-Amazon.html)]
+- Amazon Fine Food Reviews [[kaggle](https://www.kaggle.com/snap/amazon-fine-food-reviews)]
+- SemEval ABSA
+
+
+
+#### 优化方向
+
+##### 字/词/句 文本嵌入Embedding
+
+###### 中文
+
+- Chinese Word Vectors [[github](https://github.com/Embedding/Chinese-Word-Vectors)] 
+- nlp_chinese_corpus [[github](https://github.com/brightmart/nlp_chinese_corpus)] 
+- 泛化语料、专业语料、向量化时，如何整合，还是两者独立向量化
 
 
 
 
 
-别人的书的目录，可以学习逻辑
+ABSA书的目录，可以学习逻辑
 
 #### ABSA Book Outline
 
