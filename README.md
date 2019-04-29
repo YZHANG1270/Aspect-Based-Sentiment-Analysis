@@ -27,12 +27,12 @@ Aspect Based Sentiment Analysis
 
 ##### Task Process
 
-- [ ] 按句 提取 属性词
-- [ ] 按句 提取 情感词
-- [ ] 属性词所在起始位置，终止位置
-- [ ] 属性词 -> EA分类
-- [ ] 情感词 -> 极性分类
-- [ ] 整条文本的感情极性（正、负、中） 及其概率值
+1. 按句 提取 属性词
+2. 按句 提取 情感词
+3. 属性词所在起始位置，终止位置
+4. 属性词 -> EA分类
+5. 情感词 -> 极性分类
+6. 整条文本的感情极性（正、负、中） 及其概率值
 
 
 
@@ -58,6 +58,7 @@ Aspect Based Sentiment Analysis
 - SemEval - 2014 - ABSA [[competition](http://alt.qcri.org/semeval2014/task4/)] [[data](http://alt.qcri.org/semeval2014/task4/index.php?id=data-and-tools)] 
 - SemEval - 2015 - ABSA [[competition](http://alt.qcri.org/semeval2015/task12/)] [[data](http://alt.qcri.org/semeval2015/task12/index.php?id=data-and-tools)] [[paper](https://www.aclweb.org/anthology/S15-2082)] 
 - SemEval - 2016 - ABSA [[competition](http://alt.qcri.org/semeval2016/task5/)] [[data](http://alt.qcri.org/semeval2016/task5/index.php?id=data-and-tools)] [[guideline](http://alt.qcri.org/semeval2016/task5/data/uploads/absa2016_annotationguidelines.pdf)] [[paper](https://www.aclweb.org/anthology/S16-1002)]
+- bonus: CodaLab Competitions [[intro](https://www.hse.ru/data/2017/05/31/1171931089/CodaLabCompetitions.pdf)] 
 
 
 
@@ -67,14 +68,14 @@ Aspect Based Sentiment Analysis
 
 - [data: self data] [Unsupervised-Aspect-Extraction](https://github.com/ruidan/Unsupervised-Aspect-Extraction) 
 - [data: SemEval-2016] [aspect-extraction](https://github.com/soujanyaporia/aspect-extraction) 
-- [data: SemEval-2015] [AspectBasedSentimentAnalysis](https://github.com/yardstick17/AspectBasedSentimentAnalysis) 
+- [data: SemEval-2015] [AspectBasedSentimentAnalysis](https://github.com/yardstick17/AspectBasedSentimentAnalysis) 跑了下这个项目，其中结合了语法分析和机器学习，按照语法规则抽取的属性词。代码嵌套逻辑比较强，不建议套用。
 - [data: SemEval-2016] [Review_aspect_extraction](https://github.com/yafangy/Review_aspect_extraction) 
 - [data: SemEval-2014, 2016] [DE-CNN](https://github.com/howardhsu/DE-CNN) 
 - [data: SemEval-2015] [Coupled-Multi-layer-Attentions](https://github.com/happywwy/Coupled-Multi-layer-Attentions) 
 - [data: SemEval-2016 laptop] [mem_absa](https://github.com/ganeshjawahar/mem_absa) 
 - [data: SemEval-2014] [ABSA-PyTorch](https://github.com/songyouwei/ABSA-PyTorch) 
 - [data: SemEval-2014, 2016] [Attention_Based_LSTM_AspectBased_SA](https://github.com/gangeshwark/Attention_Based_LSTM_AspectBased_SA) 
-- [data: SemEval-2014] [ABSA_Keras](https://github.com/AlexYangLi/ABSA_Keras) 
+- [data: SemEval-2014] [ABSA_Keras](https://github.com/AlexYangLi/ABSA_Keras) 利用了tensorflow hub，适用hub时出现了版本问题未跑通。
 - [data: SemEval-2016] [ABSA](https://github.com/LingxB/ABSA/tree/master/Data/SemEval) 
 
  
@@ -85,8 +86,7 @@ Aspect Based Sentiment Analysis
 - Fine-grained Opinion Mining with Recurrent Neural Networks and Word Embeddings [[paper](https://www.aclweb.org/anthology/D15-1168)]
 - Encoding Conversation Context for Neural Keyphrase Extraction from Microblog Posts [[paper](https://ai.tencent.com/ailab/media/publications/naacl2018/Encoding_Conversation_Context_for_Neural_Keyphrase_Extraction_from_Microblog_Posts.pdf)]
 - End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF [[paper](https://arxiv.org/pdf/1603.01354.pdf)]
-
-
+- [2012] 用户评论中的标签抽取以及排序 [[paper](http://lipiji.com/docs/li2011opinion.pdf)] 
 
 
 
