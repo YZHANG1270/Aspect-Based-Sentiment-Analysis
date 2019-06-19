@@ -4,6 +4,8 @@ Aspect Based Sentiment Analysis
 
 虽说是基于观点的分析，但也是基于句子层的分析，因为需要按句子进行分析。
 
+![](https://github.com/YZHANG1270/Aspect-Based-Sentiment-Analysis/blob/master/img/absa.png?raw=true)
+
 
 
 
